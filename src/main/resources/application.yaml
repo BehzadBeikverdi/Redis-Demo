@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: redis-demo
+  datasource:
+    url: jdbc:postgresql://localhost:5433/redis_demo
+    username: postgres
+    password: postgres
+    hikari:
+      pool-name: Hikari
+
+  jpa:
+    hibernate:
+     ddl-auto: update
+    show-sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
